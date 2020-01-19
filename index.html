@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katarzyna Kidula</title>
+        <link href="https://fonts.googleapis.com/css?family=Bevan|Oxygen:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style_mobile.css" rel="stylesheet">
+        <script src="js/jquery.js"></script> 
+    </head>
+    <body>
+        <nav>
+            <ul class="links">
+                <li><a href="#about_me" class="link_about_me">About Me</a></li>
+                <li><a href="#projects" class="link_projects">Projects</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="rectangle">
+                <h1>Katarzyna Kidula</h1>
+                <h2>portfolio</h2>
+            </div>
+        </header>
+        <section id="about_me">
+            <div class="box_center">
+                <h1 class="heading">About Me</h1>
+                <div class="box">
+                    <p>My name is Katarzyna Kidula. I'm a junior front-end developer. I'm mastering my HTML, CSS and JavaScript skills.
+                        I also know SQL and had a short experience with PHP. I am currently learning Bootstrap, jQuery and Wordpress.<br> I like minimal, pixel perfect and easy to use interfaces.</p>
+                    <h3> Skills </h3>
+                    <h4> Good knowledge </h4>
+                    <ul>
+                        <li> HTML5 </li>
+                        <li> CSS3 </li>
+                        <li> JavaScript </li>
+                        <li> SQL </li>
+                    </ul>
+                    <h4> Basic knowledge </h4>
+                    <ul>
+                        <li> Bootsrap </li>
+                        <li> jQuery </li>
+                        <li> PHP </li>
+                    </ul>
+                </div>
+            </div>   
+        </section>
+        <section id="projects">
+            <div class="box_center">
+                <h1 class="heading">Projects</h1>
+                <div class="box_project">
+                    <h3>Single Page Website</h3> 
+                    <div class="container_img">                    
+                        <a href="https://kasiakidula.github.io/one-page-website/" title="Healthy Habits" target="_blank">
+                            <img src="images/healthy_habits2.jpg" alt="Link to single page website - Healthy Habits" class="image">
+                            <div class="overlay">
+                                <div class="text">One page website<br> used: HTML, CSS, JavaScript</div>
+                            </div>
+                        </a>
+                    </div>                    
+                </div>
+                <div class="box_project">
+                    <h3>Stopwatch</h3> 
+                    <div class="container_img">                    
+                        <a href="https://kasiakidula.github.io/stopwatch/" title="Stopwatch" target="_blank">
+                            <img src="images/stopwatch2.jpg" alt="Link to single page website - Healthy Habits" class="image">
+                            <div class="overlay">
+                                <div class="text">Stopwatch<br> used: HTML, CSS, JavaScript</div>
+                            </div>
+                        </a>
+                    </div>                    
+                </div> 
+            </div>   
+        </section>
+        <footer>
+            <div class="box_center">
+                <div class="details">
+                    <div class="autor">
+                        <p><strong>Contact Me</strong><br>kkidula@gmail.com</p>
+                        <p><strong>Follow Me</strong><br><a href="https://github.com/kasiakidula" title="My profile on GitHub" target="_blank"><i class="fab fa-github git_style"></i></a></p>
+                    </div>
+                    <div class="photo_info">
+                        <p><strong>Photo</strong><br>
+                            <a href="https://pixabay.com/pl/users/sam_lg-5697528/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3808354"> Sameera Madusanka</a> z <a href="https://pixabay.com/pl/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3808354"> Pixabay</a></p>
+                    </div>
+                </div>  
+            </div>  
+        </footer>
+        <script>
+            $(document).ready(function(){
+                $('.link_about_me').on('click', function(){
+                    $('html, body').animate({
+                        scrollTop: $('#about_me').offset().top - 55
+                    }, 700);
+                });
+                $('.link_projects').on('click', function(){
+                    $('html, body').animate({
+                        scrollTop: $('#projects').offset().top - 55
+                    }, 700);
+                });
+            });
+        </script>
+    </body>
+</html>

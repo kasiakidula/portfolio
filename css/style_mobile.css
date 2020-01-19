@@ -1,0 +1,85 @@
+@media screen and (max-width: 1050px){
+    /* PROJECTS */
+    .box_project{
+        width: 95%;
+        border-right: none;
+    }
+    /* -------------------- */
+    
+}
+@media screen and (max-width: 855px){
+    /* HEADER */
+    .rectangle{
+        margin: 20% 7.5%;
+        width: 80%;
+    }
+    /* -------------------- */
+    
+}
+@media screen and (max-width: 768px){
+    .heading{
+        font-size: 1.5em;
+    }
+    /* HEADER */
+    header{
+        height: 600px;
+        background: url(../images/top_mobile.jpg) no-repeat center;
+    }
+    .rectangle{
+        height: 20%;
+    }
+    .rectangle h1{
+        font-size: 2.5em;
+    }
+    .rectangle h2{
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+    /* -------------------- */
+    /* ABOUT ME */
+    .box p{
+        font-size: 1em;
+    }
+    .box h3{
+        font-size: 1.2em;
+    }
+    .box h4{
+        font-size: 1.1em;
+    }
+    .box ul li{
+        font-size: 1em;
+    }
+    /* -------------------- */
+    /* PROJECTS */
+    .box_project h3{
+        font-size: 1.2em;
+    }
+    /* -------------------- */
+    /* FOOTER */
+     .details{
+         flex-direction: column;
+     }
+     .photo_info{
+         margin: 20px 0;
+         text-align: left;
+     }
+     /* -------------------- */
+}
+@media screen and (max-width: 526px){
+    /* HEADER */
+    .rectangle{
+        margin-top: 30%;
+        height: 30%;
+    }
+    /* -------------------- */
+    /* PROJECTS */
+    .image{
+        width: 80%;
+    }
+    .overlay {
+        width: 80%;
+    }
+    /* -------------------- */
+    
+}
+
