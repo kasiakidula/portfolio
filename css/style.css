@@ -128,24 +128,39 @@ header{
     overflow: auto;
 }
 .box_project{
-    width: 44.5%;
+    width: 100%;
     height: auto;
-    padding: 0 2.5% 3%;
-    border-right: 1px solid #000000;
+    padding: 3% 0;
     border-bottom: 1px solid #000000;
-    float: left;
+    display: flex;
+    flex-direction: row;
+}
+.description{
+    width: 50%;
     text-align: center;
 }
-.box_project:nth-of-type(2n){
-    border-right: none;   
-}
-.box_project h3{
+.description h3{
     margin: 3%;
     font-size: 1.5em;    
 }
+.description p{
+    line-height: 22px;
+}
+.description a{
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+.description a:hover{
+    text-decoration: underline;
+}
 .container_img {
   position: relative;
-  width: 100%;
+  width: 50%;
 }
 .image {
   display: block;

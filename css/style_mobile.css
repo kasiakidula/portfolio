@@ -15,6 +15,21 @@
     }
     /* -------------------- */
     
+    /* PROJECTS */
+    .box_project{
+        flex-direction: column;
+    }
+    .description{
+        width: 100%;
+    }
+    .description a{
+        margin-bottom: 20px;
+    }
+    .container_img{
+        width: 100%;
+    }
+    /* -------------------- */
+    
 }
 @media screen and (max-width: 768px){
     .heading{
