@@ -4,18 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Katarzyna Kidula</title>
-        <link href="https://fonts.googleapis.com/css?family=Bevan|Oxygen:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/style_mobile.css" rel="stylesheet">
-        <script src="js/jquery.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <nav>
-            <ul class="links">
-                <li><a href="#about_me" class="link_about_me">About Me</a></li>
-                <li><a href="#projects" class="link_projects">Projects</a></li>
+            <ul class="nav-list">
+                <li class="nav-link"><a href="#about_me">About Me</a></li>
+                <li class="nav-link"><a href="#skills">Skills</a></li>
+                <li class="nav-link"><a href="#projects">Projects</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
             </ul>
+            <div class="menu-toggler">
+                <div class="bar start"></div>
+                <div class="bar"></div>
+                <div class="bar end"></div>
+            </div>
         </nav>
         <header>
             <div class="rectangle">
@@ -23,106 +29,225 @@
                 <h2>portfolio</h2>
             </div>
         </header>
-        <section id="about_me">
-            <div class="box_center">
+        <section class="section_style" id="about_me">
+            <div class="box_center" data-aos="fade-in" data-aos-delay="300">
                 <h1 class="heading">About Me</h1>
                 <div class="box">
-                    <p>My name is Katarzyna Kidula. I'm a junior front-end developer. I'm mastering my HTML, CSS and JavaScript skills.
-                        I also know SQL and had a short experience with PHP. I am currently learning Bootstrap, jQuery and Wordpress.<br> I like minimal, pixel perfect and easy to use interfaces.</p>
-                    <h3> Skills </h3>
-                    <h4> Good knowledge </h4>
-                    <ul>
-                        <li> HTML5 </li>
-                        <li> CSS3 </li>
-                        <li> JavaScript </li>
-                        <li> SQL </li>
-                    </ul>
-                    <h4> Basic knowledge </h4>
-                    <ul>
-                        <li> Bootsrap </li>
-                        <li> jQuery </li>
-                        <li> PHP </li>
-                    </ul>
+                    <p data-aos="fade-right" data-aos-delay="500">My name is Katarzyna Kidula. I graduated last year. I studied biomedical engineering and computer science.
+                       During my studies I had the opportunity to create many interesting projects. 
+                       It allowed me not only to learn about various technologies, but also to see 
+                       how group work looks like. Thanks to that I could develop skills such as: </p>
+                    <div class="box_soft_skills" data-aos="fade-left" data-aos-delay="500"> 
+                        <div class="skill" data-aos="fade-in" data-aos-delay="700">
+                            <div class="icon-container">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Teamwork</h4>
+                        </div>
+                        <div class="skill" data-aos="fade-in" data-aos-delay="700">
+                            <div class="icon-container">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>Communication</h4>
+                        </div>
+                        <div class="skill" data-aos="fade-in" data-aos-delay="700">
+                            <div class="icon-container">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Time Management</h4>
+                        </div>
+                        <div class="skill" data-aos="fade-in" data-aos-delay="700">
+                            <div class="icon-container">
+                                <i class="fas fa-user-ninja"></i>
+                            </div>
+                            <h4>Problem-Solving</h4>
+                        </div>
+                    </div>
+                    <p data-aos="fade-right" data-aos-delay="500">I want to tie my future with web technologies. After graduation, 
+                       I began to deepen my knowledge in this field while traveling a bit. 
+                       I learned not only <strong>HTML</strong> and <strong>CSS</strong>, but also <strong>JavaScript</strong> (basics of <strong>Webpack</strong> and <strong>Gulp</strong>), 
+                       basics of <strong>Sass</strong>, <strong>PHP</strong>, <strong>Bootstrap</strong> and <strong>WordPress</strong>. </br> </br> 
+                       I am currently learning the basics of Angular and repeating the basics of Java to 
+                       familiarize myself with the Spring and Hibernate framework.
+                    </p>
                 </div>
             </div>   
         </section>
-        <section id="projects">
-            <div class="box_center">
+    <section class="section_style" id="skills">
+        <div class="box_center" data-aos="fade-in" data-aos-delay="300">
+            <h1 class="heading">Skills</h1>
+            <p class="short_text">Below you will find technologies that I know and learn. Every day I try to deepen my knowledge.</p>
+            <div class="box_skills">
+                <div class="skill" data-aos="fade-in" data-aos-delay="200">
+                    <div class="icon-container">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="200">
+                    <div class="icon-container">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="200">
+                    <div class="icon-container">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="200">
+                    <div class="icon-container">
+                        <i class="fab fa-sass"></i>
+                    </div>
+                    <h4>Sass</h4>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="200">
+                    <div class="icon-container">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <h4>Bootstrap</h4>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="200">
+                    <div class="icon-container">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>RWD</h4>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="200">
+                    <div class="icon-container">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h4>Java</h4>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="200">
+                    <div class="icon-container">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>SQL</h4>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="200">
+                    <div class="icon-container">
+                        <i class="fab fa-github-square"></i>
+                    </div>
+                    <h4>Git</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="section_style" id="projects">
+            <div class="box_center" data-aos="fade-in" data-aos-delay="300">
                 <h1 class="heading">Projects</h1>
-                <div class="box_project">
-                    <div class="description">
+                <p class="short_text"> Here are some sample projects. They are not perfect, but thanks to them I can practice and learn new things.</br>
+                    In my projects you can also see that I like minimal and easy to use interfaces.</p>
+                <div class="box_project" data-aos="fade-in" data-aos-delay="200">
+                    <div class="description" data-aos="fade-right" data-aos-delay="250">
                         <h3>Book Finder</h3>
                         <p>The application allows users to search for books by entering a query (title, author, etc.) and displays the resulting books in a list on the page with all relevant data.</p>
                         <a href="https://github.com/kasiakidula/BookFinder" title="Source code of Book Finder" target="_blank">CODE</a>
                     </div>
-                    <div class="container_img">                    
+                    <div class="container_img" data-aos="fade-left" data-aos-delay="250">                    
                         <a href="https://codepen.io/kasiakidula/full/eYNxZxj" title="Book Finder" target="_blank">
                             <img src="images/book_finder.jpg" alt="Link to website - Book Finder" class="image">
                             <div class="overlay">
-                                <div class="text">Book Finder<br> used: HTML, CSS, JavaScript, Handlebars</div>
+                                <div class="text">Book Finder<br> used: HTML, CSS, JavaScript, Handlebars, Webpack, RWD</div>
                             </div>
                         </a>
                     </div>                    
                 </div>
-                <div class="box_project">
-                    <div class="description">
+                <div class="box_project" data-aos="fade-in" data-aos-delay="200">
+                    <div class="container_img" data-aos="fade-right" data-aos-delay="250">                    
+                        <a href="https://codepen.io/kasiakidula/full/XWbqLyx" title="NotesApp" target="_blank">
+                            <img src="images/notes_app.jpg" alt="Link to website - NotesApp" class="image">
+                            <div class="overlay">
+                                <div class="text">NotesApp<br> used: HTML, CSS, JavaScript, Webpack, RWD</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="description" data-aos="fade-left" data-aos-delay="250">
+                        <h3>NotesApp</h3>
+                        <p>In this application you can create and store your notes for later purpose.</p>
+                        <a href="https://github.com/kasiakidula/NotesApp" title="Source code of NotesApp" target="_blank">CODE</a>
+                    </div>
+                </div>
+                <div class="box_project" data-aos="fade-in" data-aos-delay="200">
+                    <div class="description" data-aos="fade-right" data-aos-delay="250">
                         <h3>Healthy Habits</h3>
                         <p>This is the site of a fictitious company offering dietitian services.</p>
                         <a href="https://github.com/kasiakidula/one-page-website" title="Source code of Healthy Habits website" target="_blank">CODE</a>
                     </div>
-                    <div class="container_img">                    
+                    <div class="container_img" data-aos="fade-left" data-aos-delay="250">                    
                         <a href="https://kasiakidula.github.io/one-page-website/" title="Healthy Habits" target="_blank">
                             <img src="images/healthy_habits2.jpg" alt="Link to website - Healthy Habits" class="image">
                             <div class="overlay">
-                                <div class="text">Healthy Habits<br> used: HTML, CSS, JavaScript</div>
+                                <div class="text">Healthy Habits<br> used: HTML, CSS, JavaScript, RWD</div>
                             </div>
                         </a>
-                    </div>                    
-                </div>
-                <div class="box_project">
-                    <div class="description">
-                        <h3>My Portfolio</h3>
-                        <p>This is my personal website. You are here right now.</p>
-                        <a href="https://github.com/kasiakidula/portfolio" title="Source code of portfolio website" target="_blank">CODE</a>
                     </div>
-                    <div class="container_img">                    
+                </div>
+                <div class="box_project" data-aos="fade-in" data-aos-delay="200">
+                    <div class="container_img" data-aos="fade-right" data-aos-delay="250">                    
                         <a href="https://kasiakidula.github.io/portfolio/ " title="Portfolio" target="_blank">
                             <img src="images/portfolio.jpg" alt="Link to my portfolio" class="image">
                             <div class="overlay">
-                                <div class="text">My Portfolio<br> used: HTML, CSS, JavaScript, jQuery</div>
+                                <div class="text">My Portfolio<br> used: HTML, CSS, JavaScript, jQuery, RWD</div>
                             </div>
                         </a>
+                    </div>
+                    <div class="description" data-aos="fade-left" data-aos-delay="250">
+                        <h3>My Portfolio</h3>
+                        <p>This is my personal website. You are here right now.</p>
+                        <a href="https://github.com/kasiakidula/portfolio" title="Source code of portfolio website" target="_blank">CODE</a>
                     </div>                    
                 </div> 
             </div>   
         </section>
+        <section class="section_style" id="contact">
+            <div class="box_center" data-aos="fade-in" data-aos-delay="300">
+                <h1 class="heading">Contact</h1>
+                <div class="box">
+                    <p data-aos="fade-right" data-aos-delay="500">If you need more information about me, please feel free on contact me by my social media</p> 
+                    <div class="social_media" data-aos="fade-left" data-aos-delay="500">
+                        <div class="contact" data-aos="fade-in" data-aos-delay="700">
+                            <a href="https://github.com/kasiakidula" class="contact_link" title="My profile on GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="contact" data-aos="fade-in" data-aos-delay="700">
+                            <a href="https://codepen.io/kasiakidula" class="contact_link" title="My profile on CodePen" target="_blank"><i class="fab fa-codepen"></i></a>
+                        </div>
+                        <div class="contact" data-aos="fade-in" data-aos-delay="700">
+                            <a href="https://www.facebook.com/kasia.kidula" class="contact_link" title="My profile on Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    <p data-aos="fade-right" data-aos-delay="500"> or on a mail <a href="mailto:kkidula@gmail.com" class="contact_link" title="My email adress" target="_blank"> kkidula@gmail.com</a></p>
+                    <div class="mail" data-aos="fade-left" data-aos-delay="500">
+                        <div class="contact" data-aos="fade-in" data-aos-delay="700">
+                            <a href="mailto:kkidula@gmail.com" class="contact_link" title="Write to me" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
         <footer>
             <div class="box_center">
                 <div class="details">
-                    <div class="autor">
-                        <p><strong>Contact Me</strong><br>kkidula@gmail.com</p>
-                        <p><strong>Follow Me</strong><br><a href="https://github.com/kasiakidula" title="My profile on GitHub" target="_blank"><i class="fab fa-github git_style"></i></a></p>
-                    </div>
-                    <div class="photo_info">
-                        <p><strong>Photo</strong><br>
+                    <div class="info">
+                        <div class="author">
+                            <p>&copy; 2020 Katarzyna Kidula</p>
+                        </div>
+                        <div class="photo">
+                         <p><strong>Photo</strong><br>
                             <a href="https://pixabay.com/pl/users/sam_lg-5697528/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3808354"> Sameera Madusanka</a> z <a href="https://pixabay.com/pl/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3808354"> Pixabay</a></p>
-                    </div>
-                </div>  
-            </div>  
+                        </div>
+                    </div>    
+                    <div class="up" id="up">
+                        <i class="fas fa-chevron-up"></i>
+                    </div>     
+                </div>
+            </div>
         </footer>
-        <script>
-            $(document).ready(function(){
-                $('.link_about_me').on('click', function(){
-                    $('html, body').animate({
-                        scrollTop: $('#about_me').offset().top - 55
-                    }, 700);
-                });
-                $('.link_projects').on('click', function(){
-                    $('html, body').animate({
-                        scrollTop: $('#projects').offset().top - 55
-                    }, 700);
-                });
-            });
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

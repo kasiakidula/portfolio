@@ -21,43 +21,91 @@ h1, h2, h3, h4, p{
 .heading{
     padding-bottom: 3%;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     border-bottom: 1px solid #000000;
 }
-
-
+.section_style {
+    width: 100%;
+    background: #FFFFFF;
+    border-bottom: 1px solid #000000;
+    overflow: auto;
+}
+.short_text {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    text-align: center;
+    padding: 3%;
+}
 /*MENU*/
 nav{
     width: 100%;
     position: fixed;
-    padding: 15px 0;
+    padding: .9rem 0;
     background: #000000;
     z-index: 101;
+    display: flex;
+    flex-direction: row;
 }
-.links{
-    width: 300px;
+.nav-list{
     margin: 0 auto;
-    padding: 0;
+    width: 25rem;
     list-style: none;
 }
-.links li{
-    width: 150px;
+.nav-link {
+    width: 6.25rem;
     float: left;
     text-align: center;
 }
-.links li a{
+.nav-link a{
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
 }
-.links li a:hover{
+.nav-link a:hover{
     text-decoration: underline;
     text-shadow: 0 0 3px #FFFFFF;
 }
+.menu-toggler {
+    width: 2.5rem;
+    height: 1.5rem;
+    margin-right: 2rem;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+.bar {
+    margin-bottom: .4rem;
+    width: 2.4rem;
+    height: 3px;
+    background-color: #fff;
+    border-radius: .4rem;
+}
+.menu-toggler.open {
+    transform: rotate(45deg);
+}
+.bar:last-child {
+    margin-bottom: 0;
+}
+.bar.start {
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.start {
+    transform: rotate(-450deg) translateX(-.55rem);
+}
+
+.bar.end {
+    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.end {
+    transform: rotate(-450deg) translateX(.55rem);
+}
 /* -------------------- */
-
-
 /* HEADER */
 header{
     width: 100%;
@@ -72,61 +120,59 @@ header{
     width: 70%;
     height: 25%;
     background: #000000;
-    border-radius: 10px;
+    border-radius: .6rem;
 }
 .rectangle h1{
     font-family: 'Bevan', cursive;
-    font-size: 3.5em;
+    font-size: 3.5rem;
     color: #FFFFFF;
 }
 .rectangle h2{
-    font-size: 2.5em;
+    font-size: 2.5rem;
     color: #FFFFFF;
 }
 /* -------------------- */
-
-
 /* ABOUT_ME */
-#about_me{
-    width: 100%;
-    background: #FFFFFF;
-    border-bottom: 1px solid #000000;
-    overflow: auto;
-}
 .box{
+    width: 94%;
     padding: 3%;
     text-align: center;
 }
 .box p{
-    font-size: 1.2em;
-    line-height: 24px;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    text-align: center;
 }
-.box h3{
-    font-size: 1.5em;
-    margin: 3% 0;
+.box_soft_skills {
+    width: 94%;
+    padding: 7% 3%;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(8rem, 1fr));
+    grid-gap: 1rem;
+    text-align: center; 
 }
-.box h4{
-    font-size: 1.3em;
-    margin-bottom: 1.5%;
+.box_soft_skills .icon-container {
+    font-size: 3rem;
+} 
+/* -------------------- */
+/* SKILLS */
+.box_skills {
+    width: 94%;
+    padding: 3%;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+    text-align: center;
 }
-.box ul{
-    margin: 0 0 1.5%;
-    padding: 0;
-    list-style: none;
+.skill {
+    width: 98%;
+    padding: 1%;
 }
-.box ul li{
-    font-size: 1.2em;
+#skills .skill .icon-container {
+    font-size: 4rem;
 }
 /* -------------------- */
-
-
 /* PROJECTS */
-#projects{
-    width: 100%;
-    padding-bottom: 5%;
-    background: #FFFFFF;
-    overflow: auto;
-}
 .box_project{
     width: 100%;
     height: auto;
@@ -135,16 +181,19 @@ header{
     display: flex;
     flex-direction: row;
 }
+.box_project:last-child {
+    border-bottom: none;
+}
 .description{
     width: 50%;
     text-align: center;
 }
 .description h3{
     margin: 3%;
-    font-size: 1.5em;    
+    font-size: 1.5rem;    
 }
 .description p{
-    line-height: 22px;
+    line-height: 1.4rem;
 }
 .description a{
     width: 50px;
@@ -186,7 +235,7 @@ header{
 }
 .text {
   color: white;
-  font-size: 1em;
+  font-size: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -195,13 +244,33 @@ header{
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 /* -------------------- */
-
-
+/*CONTACT */
+.social_media {
+    width: 50%;
+    padding: 3% 25%;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(8rem, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+}
+.contact {
+    font-size: 3rem;
+}
+.contact_link {
+    color: #000000;
+}
+.contact_link:hover {
+    text-shadow: 0 0 5px #000000;
+}
+.mail {
+    padding-top: 3%;
+}
+/* -------------------- */
 /* FOOTER */
 footer{
     width: 100%;
+    padding-bottom: 1rem;
     background: #000000;
     overflow: auto; 
 }
@@ -209,33 +278,186 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: row;
-    font-size: 1em;
+    font-size: 1.1rem;
     color: #FFFFFF;
 }
-.autor {
+.info {
     display: felx;
+    flex-direction: column;
     margin: 0;
 }
-.autor p {
-    margin: 0;
+.author {
+    margin-top: 0;
+    margin-bottom: 2rem;
     padding: 2px 0;
 }
-.git_style{
-    margin-top: 3px;
-    color: #FFFFFF;
-    font-size: 2.5em;
-}
-.photo_info{
-    display: flex;
-    margin: 0 0 0 auto;
-    text-align: right;
-}
-.photo_info a{
+.photo a{
     text-decoration: none;
     color: #FFFFFF;
 }
-.photo_info a:hover{
+.photo a:hover{
     text-decoration: underline;
     text-shadow: 0 0 3px #FFFFFF;
 }
+.up{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    right: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+    
+}
+.up i {
+    color: #000;
+    font-size: 1.5rem;
+    margin: auto;
+}
 /* -------------------- */
+/* ANIMATION */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(128, 128, 128, .99);
+    }
+    70% {
+        box-shadow: 0 0 0 1rem rgba(128, 128, 128, .0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(128, 128, 128, .0);
+    }
+}
+/* -------------------- */
+@media screen and (max-width: 1050px){
+    /* PROJECTS */
+    .box_project{
+        width: 95%;
+        border-right: none;
+    }
+    /* -------------------- */
+    /* CONTACT */
+    .social_media {
+        width: 80%;
+        padding: 3% 10%;
+    }
+    /* -------------------- */
+}
+@media screen and (max-width: 855px){
+    /* HEADER */
+    .rectangle{
+        margin: 20% 7.5%;
+        width: 80%;
+    }
+    /* -------------------- */
+    /* PROJECTS */
+    .box_project{
+        flex-direction: column;
+    }
+    .description{
+        width: 100%;
+    }
+    .description a{
+        margin-bottom: 20px;
+    }
+    .container_img{
+        width: 100%;
+    }
+    /* -------------------- */    
+}
+@media screen and (max-width: 768px){
+    .heading{
+        font-size: 1.5rem;
+    }
+    .short_text {
+        font-size: 1.15rem;
+    }
+    /* NAV */
+    .nav-list{
+        margin-left: -250vh;
+        transition: all 300ms cubic-bezier(1, 0, 0, 1);
+    }
+    .nav-link.open{
+        width: 100%;
+        margin: 2rem 0; 
+    }
+    .nav-list.open {
+        margin-left: 0;
+        width: 200px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        transition: 700ms;
+    }
+    .menu-toggler {
+        display: block;
+    }
+    /* ------------------------ */
+    /* HEADER */
+    header{
+        height: 600px;
+        background: url(../images/top_mobile.jpg) no-repeat center;
+    }
+    .rectangle{
+        height: 20%;
+    }
+    .rectangle h1{
+        font-size: 2.5rem;
+    }
+    .rectangle h2{
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+    /* -------------------- */
+    /* ABOUT ME */
+    .box p{
+        font-size: 1.15rem;
+    }
+    .box_soft_skills .icon-container {
+        font-size: 2.5rem;
+    }
+    /* -------------------- */
+    /* SKILLS */
+    #skills .skill .icon-container {
+        font-size: 3.5rem;
+    }
+    /* -------------------- */
+    /* PROJECTS */
+    .box_project h3{
+        font-size: 1.2rem;
+    }
+    /* -------------------- */
+    /* CONTACT */
+    .contact {
+        font-size: 2.5rem;
+    }
+    /* -------------------- */
+    /* FOOTER */
+     .details{
+         font-size: 1rem;
+     }
+     /* -------------------- */
+}
+@media screen and (max-width: 526px){
+    /* HEADER */
+    .rectangle{
+        margin-top: 30%;
+        height: 30%;
+    }
+    /* -------------------- */
+    /* PROJECTS */
+    .image{
+        width: 80%;
+    }
+    .overlay {
+        width: 80%;
+    }
+    /* -------------------- */
+    /* FOOTER */
+    .up {
+       right: 2rem; 
+    }
+    /* -------------------- */
+}
