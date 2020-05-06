@@ -200,12 +200,11 @@ header{
     margin: 0 auto;
     display: block;
     margin-top: 20px;
-    text-decoration: none;
     color: #000000;
     font-weight: bold;
 }
 .description a:hover{
-    text-decoration: underline;
+    text-shadow: 0 0 2px #000000;
 }
 .container_img {
   position: relative;
@@ -261,7 +260,7 @@ header{
     color: #000000;
 }
 .contact_link:hover {
-    text-shadow: 0 0 5px #000000;
+    text-shadow: 0 0 3px #000000;
 }
 .mail {
     padding-top: 3%;
@@ -300,11 +299,10 @@ footer{
     text-shadow: 0 0 3px #FFFFFF;
 }
 .up{
-    position: absolute;
+    margin: 0 0 0 auto;
     width: 2.5rem;
     height: 2.5rem;
     background-color: #fff;
-    right: 2.5rem;
     border-radius: 100%;
     display: flex;
     animation: pulse 1.5s infinite;
